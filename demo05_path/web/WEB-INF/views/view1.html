@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+这里如果直接看文件目录应该设置为../../static/img/image1.jpg
+但是web-inf下目录不能直接访问，需要走重定向，而执行重定向的servlet为View1Servlet
+访问View1Servlet的路径为http://localhost:8080/demo05/view1Servlet
+view1Servlet所在的路径为http://localhost:8080/demo05
+所以这里设置为static/img/image1.jpg
+-->
+    <img src="static/img/image1.jpg" alt="load fail">
+
+<!--或者使用绝对路径-->
+<!--    <img src="/demo05/static/img/image1.jpg" alt="load fail">-->
+</body>
+</html>

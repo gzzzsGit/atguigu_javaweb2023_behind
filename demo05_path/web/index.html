@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    当前页面中，所有不加任何修饰的相对路径前，会自动补充href中的内容-->
+    <base href="/demo05/">
+</head>
+<!--
+TODO:
+  1  相对路径
+        以当前资源的所在路径为出发点去找目标资源
+        语法： 不以/开头
+              ./表示当前资源的路径
+              ../表示当前资源的上一层路径
+        缺点；目标资源路径受到当前资源路径的影响  不同的位置，相对路径写法不同
+  2  绝对路径
+        始终以固定的路径作为出发点去找目标资源  和当前资源所在的路径没有关系
+        语法：以/开头
+             不同的项目中，固定的路径出发点可能不一致
+        优点：目标资源路径的写法不会受到当前资源路径的影响  不同的位置，相对路径写法相同
+        缺点：绝对路径需要补充项目的上下文  项目上下文是可以改变的
+  3 通过 head>base>href属性，定义相对路径公共前缀，通过公共前缀把一个相对路径转换为绝对路径
+-->
+<body>
+<!--
+以当前资源的所在路径：http://localhost:8080/demo05/ 拼接相对路径
+拼接的结果是http://localhost:8080/demo05/static/img/image1.jpg
+-->
+<!--    <img src="static/img/image1.jpg" alt="图片加载失败">-->
+
+<!--
+使用绝对路径：
+此时项目的出发路径是localhost:8080,不包含上下文路径
+-->
+<!--    <img src="/demo05/static/img/image1.jpg" alt="load failed">-->
+
+<!--
+通过 head>base>href属性，定义相对路径公共前缀，通过公共前缀把一个相对路径转换为绝对路径
+此时访问的路径是/demo05/static/img/image1.jpg，一个绝对路径
+-->
+<img src="static/img/image1.jpg" alt="图片加载失败">
+</body>
+</html>

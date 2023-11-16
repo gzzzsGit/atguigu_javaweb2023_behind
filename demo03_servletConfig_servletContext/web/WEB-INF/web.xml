@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <context-param>
+        <param-name>encoding</param-name>
+        <param-value>UTF-8</param-value>
+    </context-param>
+    <context-param>
+        <param-name>user</param-name>
+        <param-value>gzzz</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>servlet1</servlet-name>
+        <servlet-class>com.gzzz.servlet.ServletA</servlet-class>
+<!--        配置servlet的初始参数-->
+        <init-param>
+            <param-name>keya</param-name>
+            <param-value>valuea</param-value>
+        </init-param>
+        <init-param>
+            <param-name>keyb</param-name>
+            <param-value>valueb</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+    
+</web-app>

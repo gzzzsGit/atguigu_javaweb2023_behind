@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+<!--
+    1 配置Servlet类，并在<servlet-name>中起一个别名
+-->
+    <servlet>
+        <servlet-name>nickName</servlet-name>
+        <servlet-class>com.gzzz.servlet.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>nickName</servlet-name>
+        <url-pattern>/userServlet</url-pattern>
+    </servlet-mapping>
+<!--
+    一个servlet-name可以同时对应多个url-pattern
+    一个url-pattern只能对应一个servlet-name
+    一个servlet标签可以同时对应多个servLet-mapping
+
+    url-pattern
+        1   精确匹配
+            /servlet
+        2   模糊匹配
+          * 通配符，*在哪里哪里就是模糊的
+            /   匹配全部，但不匹配jsp文件
+            /*  匹配全部，包括jsp文件
+            /a/* 匹配前缀，/a/开头的所有文件
+            *.action 匹配后缀，前缀模糊
+-->
+    <servlet>
+        <servlet-name>servlet1</servlet-name>
+        <servlet-class>com.gzzz.servlet.ServletA</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servlet1</servlet-name>
+        <url-pattern>/s1</url-pattern>
+        <url-pattern>/xx1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servlet1</servlet-name>
+<!--        <url-pattern>/</url-pattern>-->
+<!--        <url-pattern>/*</url-pattern>-->
+        <url-pattern>/a/*</url-pattern>
+        <url-pattern>*.action</url-pattern>
+    </servlet-mapping>
+
+<!--    <servlet>-->
+<!--        <servlet-name>LifeCircleServlet</servlet-name>-->
+<!--        <servlet-class>com.gzzz.servlet.LifeCircleServlet</servlet-class>-->
+<!--        <load-on-startup>1</load-on-startup>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>LifeCircleServlet</servlet-name>-->
+<!--        <url-pattern>/LifeCircleServlet</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+</web-app>

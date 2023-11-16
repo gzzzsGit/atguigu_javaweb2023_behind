@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+1   根标签只能有一个
+2   第一行永远是<?xml version="1.0" encoding="utf-8" ?> 前面不能有任何东西，包括回车空格       除非是设置项目上下文和实际路径映射的xml文件，第一行可以是<Context path="/app" docBase="D:\mywebapps\app" />
+3   xml是有约束的，约束用于限定xml内部能编写的内容
+        dtd     简单   但是不如schema细致
+        schema  复杂   但是比dtd约束细致
+-->
+
+<jdbc>
+    <dev id="1">
+        <username>root</username>
+        <password>root</password>
+        <driver>com.mysql.cj.jdbc.Driver</driver>
+        <url>jdbc:mysql://localhost:3306/gzzz</url>
+    </dev>
+    <test id = "2">
+        <username>test</username>
+        <password>123456</password>
+        <driver>com.mysql.cj.jdbc.Driver</driver>
+        <url>jdbc:mysql://localhost:3306/gzzz</url>
+    </test>
+    <formal id = "3">
+        <username>formal</username>
+        <password>654321</password>
+        <driver>com.mysql.cj.jdbc.Driver</driver>
+        <url>jdbc:mysql://localhost:3306/gzzz</url>
+    </formal>
+</jdbc>
