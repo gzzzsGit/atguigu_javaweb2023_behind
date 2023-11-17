@@ -22,7 +22,8 @@ import java.io.IOException;
 public class View1Servlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("WEB-INF/views/view1.html");
+        // 请求转发的基准路径相当于localhost:8080/demo05/
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/views/view1.html");
         requestDispatcher.forward(req, resp);
     }
 }
