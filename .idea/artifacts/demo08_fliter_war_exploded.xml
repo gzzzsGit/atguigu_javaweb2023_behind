@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="demo08_fliter:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/demo08_fliter_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="demo08_fliter/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="demo08_fliter" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

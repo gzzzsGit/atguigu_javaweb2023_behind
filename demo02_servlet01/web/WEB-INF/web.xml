@@ -31,7 +31,7 @@
 -->
     <servlet>
         <servlet-name>servlet1</servlet-name>
-        <servlet-class>com.gzzz.servlet.ServletA</servlet-class>
+        <servlet-class>com.gzzz.servlet.Servlet1</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>servlet1</servlet-name>
@@ -55,5 +55,4 @@
 <!--        <servlet-name>LifeCircleServlet</servlet-name>-->
 <!--        <url-pattern>/LifeCircleServlet</url-pattern>-->
 <!--    </servlet-mapping>-->
-
 </web-app>

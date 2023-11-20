@@ -38,6 +38,6 @@ import java.util.Objects;
 @Data // 相当于@Getter @Setter @EqualsAndHashCode @ToString 四个注解
 public class SysUser{
     private Integer uid;
-    private String uname;
+    private String username;
     private String userPwd;
 }

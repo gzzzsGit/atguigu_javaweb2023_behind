@@ -8,6 +8,10 @@
       <module fileurl="file://$PROJECT_DIR$/demo03_servletConfig_servletContext/demo03_servletConfig_servletContext.iml" filepath="$PROJECT_DIR$/demo03_servletConfig_servletContext/demo03_servletConfig_servletContext.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo04_forward_redirect/demo04_forward_redirect.iml" filepath="$PROJECT_DIR$/demo04_forward_redirect/demo04_forward_redirect.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo05_path/demo05_path.iml" filepath="$PROJECT_DIR$/demo05_path/demo05_path.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo06_cookie_session/demo06_cookie_session.iml" filepath="$PROJECT_DIR$/demo06_cookie_session/demo06_cookie_session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo07/demo07.iml" filepath="$PROJECT_DIR$/demo07/demo07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo08_fliter/demo08_fliter.iml" filepath="$PROJECT_DIR$/demo08_fliter/demo08_fliter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo09_listener/demo09_listener.iml" filepath="$PROJECT_DIR$/demo09_listener/demo09_listener.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_json/demo_json.iml" filepath="$PROJECT_DIR$/demo_json/demo_json.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo_xml/demo_xml.iml" filepath="$PROJECT_DIR$/demo_xml/demo_xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/schedule_system/schedule_system.iml" filepath="$PROJECT_DIR$/schedule_system/schedule_system.iml" />
