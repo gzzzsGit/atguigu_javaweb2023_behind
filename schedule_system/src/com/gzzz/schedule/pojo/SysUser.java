@@ -26,9 +26,9 @@ import java.util.Objects;
  *           getter and setter 全参构造 无参构造 equals hashcode
  *           步骤:
  *               1 安装lombok插件
- *               2 检查是否勾选了 enable annotation processing
+ *               2 检查是否勾选了 build,Execution,deployment -> compile ->enable annotation processing
  *               3 导入Lombok依赖
- *               4
+ *               4 使用相应注解
  * @Author gzzz
  * @Create 2023/11/17 18:23
  * @Version 1.0
